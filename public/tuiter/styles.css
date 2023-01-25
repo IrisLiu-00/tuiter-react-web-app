@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  padding-left: 16px;
+  padding-right: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wd-content-container {
+  border: 1px solid rgb(47, 51, 54);
+  border-top: 0;
+  padding: 12px 16px;
+}
+
+.wd-container-with-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-accent-text {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.wd-font-gray {
+  color: rgb(110, 118, 125);
+}
+
+.wd-font-white {
+  color: white;
+}
+
+.wd-font-red {
+  color: #ff005a;
+}
+
+.wd-title-text {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
