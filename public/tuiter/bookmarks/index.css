@@ -17,7 +17,7 @@
 
 .wd-tweet-text {
   max-width: 506px;
-  margin-top: 12px;
+  margin-top: 7px;
 }
 
 .wd-tweet-link {
@@ -50,4 +50,11 @@
 
 .wd-margin-right {
   margin-right: 12px;
+}
+
+.wd-header-icon {
+  color: rgb(29, 161, 242);
+  font-size: 29px;
+  position: relative;
+  top: -8px;
 }

@@ -19,9 +19,13 @@
 
 .wd-search-input {
   background-color: rgb(38 41 44);
+  background-image: url(../assets/search_icon.png);
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 20px 5px;
   color: white;
   border: 0;
-  padding: 1px 20px;
+  padding: 1px 60px;
   width: 85%;
   height: 31px;
   border-radius: 40px;
@@ -31,6 +35,7 @@
   /* TODO: classname? */
   width: 30px;
   height: 30px;
+  margin-left: 10px;
 }
 
 .wd-categories {
@@ -51,9 +56,4 @@
 .wd-categories-link-selected {
   color: rgb(29, 161, 242);
   border-bottom: 3px solid rgb(29, 161, 242);
-}
-
-.wd-breadcrumbs {
-  font-size: 20px;
-  color: rgb(110, 118, 125);
 }
