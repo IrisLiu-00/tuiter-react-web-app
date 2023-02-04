@@ -1,58 +1,47 @@
-.wd-search-divider {
-  height: 10px;
-  background-color: rgb(27 29 30);
-  border: 1px solid rgb(47, 51, 54);
-  border-top-width: 2px;
+.fw-medium {
+  font-weight: 500;
+}
+.fs-mega {
+  font-size: 2rem;
 }
 
-.wd-container-with-img > .topic-image {
-  width: 75px;
-  height: 75px;
+.ovr-btn-round {
+  border-radius: 40px;
+}
+
+.ovr-input-search {
+  border-radius: 40px;
+  background-image: url(../assets/search_icon.png);
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 12px 7px;
+  padding-left: 43px;
+}
+
+.nav-link {
+  color: #089aef;
+  font-weight: 600;
+}
+.nav-link.active {
+  color: #5d6872;
+}
+
+/* Text overlay properties from https://www.w3schools.com/howto/howto_css_image_text.asp */
+.text-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.topic-image {
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 17px;
 }
 
-.wd-search-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.wd-search-input {
-  background-color: rgb(38 41 44);
-  background-image: url(../assets/search_icon.png);
-  background-size: 23px;
-  background-repeat: no-repeat;
-  background-position: 20px 5px;
-  color: white;
-  border: 0;
-  padding: 1px 60px;
-  width: 85%;
-  height: 31px;
-  border-radius: 40px;
-}
-
-.wd-settings-link > img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-.wd-categories {
-  clear: both;
-  margin-top: 16px;
-  margin-bottom: 7px;
-}
-
-.wd-categories-link {
-  padding: 16px;
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(110, 118, 125);
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-.wd-categories-link-selected {
-  color: rgb(29, 161, 242);
-  border-bottom: 3px solid rgb(29, 161, 242);
+.pfp-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }

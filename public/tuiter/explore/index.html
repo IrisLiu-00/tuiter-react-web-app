@@ -4,92 +4,234 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
-    <link href="../styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="wd-content-container">
-        <div class="wd-search-header">
-            <input class="wd-search-input" type="text" placeholder="Search Tuiter" />
-            <a class="wd-settings-link" href="explore-settings.html">
-                <img src="../assets/gear_icon.png" />
-            </a>
-        </div>
-        <div class="wd-categories">
-            <a class="wd-categories-link wd-categories-link-selected" href="#">For you</a>
-            <a class="wd-categories-link" href="#">Trending</a>
-            <a class="wd-categories-link" href="#">COVID-19</a>
-            <a class="wd-categories-link" href="#">Sports</a>
-            <a class="wd-categories-link" href="#">News</a>
-            <a class="wd-categories-link" href="#">Entertainment</a>
-        </div>
-    </div>
-    <div class="wd-search-divider"></div>
-
-
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">Trending in Science</div>
-            <div class="wd-title-text">Starship</div>
-            <div class="wd-accent-text wd-font-gray">55.5K Tweets</div>
-        </div>
-
-        <div class="wd-breadcrumbs">...</div>
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">Sports - Trending</div>
-            <div class="wd-title-text">Joe Rogan</div>
-            <div class="wd-accent-text wd-font-gray">5,218 Tweets</div>
-        </div>
-        <div class="wd-breadcrumbs">...</div>
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">
-                <span class="wd-font-white">The New York Times</span>
-                - Yesterday
+    <div class="container mt-2 mb-4">
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group">
+                    <div class="list-group-item"><i class="fab fa-twitter"></i></div>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-xl-inline">Home</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <i class="fa fa-solid fa-hashtag"></i>
+                        <span class="d-none d-xl-inline">Explore</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-bell"></i>
+                        <span class="d-none d-xl-inline">Notifications</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-envelope"></i>
+                        <span class="d-none d-xl-inline">Messages</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-bookmark"></i>
+                        <span class="d-none d-xl-inline">Bookmarks</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-list"></i>
+                        <span class="d-none d-xl-inline">Lists</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-user"></i>
+                        <span class="d-none d-xl-inline">Profile</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span class="d-none d-xl-inline">More</span>
+                    </a>
+                    <button type="button" class="btn btn-primary mt-2 ovr-btn-round">
+                        Tuit
+                    </button>
+                </div>
             </div>
-            <div class="wd-title-text">CNN's Cuomo conundrum: A star anchor with a brother in trouble</div>
-        </div>
-        <img class="topic-image"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Noblesville-indiana-county-seat.jpg/800px-Noblesville-indiana-county-seat.jpg" />
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">COVID-19 - Live</div>
-            <div class="wd-title-text">COVID-19: News and Updates for Massachusetts</div>
-        </div>
-        <img class="topic-image"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boston_Financial_District_skyline.jpg/640px-Boston_Financial_District_skyline.jpg" />
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">Only on Twitter - Trending</div>
-            <div class="wd-title-text">#GOBLINWEEK</div>
-        </div>
-        <img class="topic-image"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Goblin_illustration_from_19th_century.jpg/640px-Goblin_illustration_from_19th_century.jpg" />
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">
-                <span class="wd-font-white">Bloomberg Opinion</span>
-                - Yesterday
+            <div class="col-6">
+                <div class="d-flex align-items-center">
+                    <input class="form-control ovr-input-search" type="text" placeholder="Search Tuiter" />
+                    <i class="fas fa-cog fs-mega text-primary ms-3"></i>
+                </div>
+                <ul class="nav nav-tabs mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Entertainment</a>
+                    </li>
+                </ul>
+                <div class="mt-2">
+                    <div class="position-relative">
+                        <img class="img-fluid"
+                            src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" />
+                        <div class="text-overlay fs-2 fw-bold text-white">SpaceX's Starship</div>
+                    </div>
+                    <div>
+                        <div class="border d-flex justify-content-between p-3">
+                            <div class="me-3">
+                                <div class="text-muted fw-medium">Web Development</div>
+                                <div class="fw-bold">
+                                    ReactJS
+                                    <i class="fas fa-check-square"></i>
+                                    <span class="text-muted fw-medium">- 2h</span>
+                                </div>
+                                <div class="fw-bold">
+                                    React.js is a component based front end library that makes it very
+                                    easy to build Single Page Applications or SPAs
+                                </div>
+                            </div>
+                            <img class="topic-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU"></img>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border d-flex justify-content-between p-3">
+                            <div class="me-3">
+                                <div class="fw-bold">
+                                    JavaScript
+                                    <i class="fas fa-check-square"></i>
+                                    <span class="text-muted fw-medium">- 2h</span>
+                                </div>
+                                <div class="fw-bold">
+                                    JavaScript is a programming language that can run on browsers as well as
+                                    desktops
+                                </div>
+                                <div class="text-muted fw-medium">123K Tweets</div>
+                            </div>
+                            <img class="topic-image"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></img>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border d-flex justify-content-between p-3">
+                            <div class="me-3">
+                                <div class="text-muted fw-medium">Web Development</div>
+                                <div class="fw-bold">
+                                    JQuery
+                                </div>
+                                <div class="text-muted fw-medium">123K Tweets</div>
+                            </div>
+                            <img class="topic-image"
+                                src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png"></img>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="border rounded-bottom d-flex justify-content-between p-3">
+                            <div class="me-3">
+                                <div class="text-muted fw-medium">Web Development</div>
+                                <div class="fw-bold">
+                                    NodeJS
+                                    <i class="fas fa-check-square"></i>
+                                    <span class="text-muted fw-medium">- 2h</span>
+                                </div>
+                                <div class="text-muted fw-medium">123K Tweets</div>
+                            </div>
+                            <img class="topic-image"
+                                src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"></img>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="wd-title-text">Thinking about getting a booster? Read this first.</div>
+            <div class="col-4">
+                <div class="list-group">
+                    <div class="list-group-item fw-bold">Who To Follow</div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="rounded-circle pfp-image me-3"
+                                src="https://banner2.cleanpng.com/20180621/jow/kisspng-plain-old-java-object-programming-language-compute-5b2b6405b39ad9.4848800015295703097357.jpg"></img>
+                            <div>
+                                <div class="fw-bold">
+                                    Java
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>@Java</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ovr-btn-round my-2">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="rounded-circle pfp-image me-3"
+                                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"></img>
+                            <div>
+                                <div class="fw-bold">
+                                    Relativity Space
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>@relativityspace</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ovr-btn-round my-2">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="rounded-circle pfp-image me-3"
+                                src="https://www.headforpoints.com/wp-content/uploads/2021/12/Virgin-Logo-tail.png"></img>
+                            <div>
+                                <div class="fw-bold">
+                                    Virgin Galactic
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>@virgingalactic</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ovr-btn-round my-2">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="rounded-circle pfp-image me-3"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"></img>
+                            <div>
+                                <div class="fw-bold">
+                                    NASA
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>@nasa</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ovr-btn-round my-2">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="rounded-circle pfp-image me-3"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"></img>
+                            <div>
+                                <div class="fw-bold">
+                                    Tesla
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div>@tesla</div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm ovr-btn-round my-2">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img class="topic-image"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Syringe_5_With_Drops_%28ZaldyImg%29.jpg/1024px-Syringe_5_With_Drops_%28ZaldyImg%29.jpg" />
-    </div>
-    <div class="wd-content-container wd-container-with-img">
-        <div>
-            <div class="wd-accent-text wd-font-gray">Trending in United States</div>
-            <div class="wd-title-text">Wonder Bread</div>
-            <div class="wd-accent-text wd-font-gray">5,218 Tweets</div>
-        </div>
-        <div class="wd-breadcrumbs">...</div>
     </div>
 
 </body>
