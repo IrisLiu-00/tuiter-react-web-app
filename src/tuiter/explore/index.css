@@ -1,0 +1,33 @@
+.fw-medium {
+  font-weight: 500;
+}
+.fs-mega {
+  font-size: 2rem;
+}
+
+.ovr-btn-round {
+  border-radius: 40px;
+}
+
+.ovr-input-search {
+  border-radius: 40px !important;
+  background-image: url('../../assets/search_icon.png');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 12px 7px;
+  padding-left: 43px !important;
+}
+
+.nav-link {
+  color: #089aef;
+}
+.nav-link.active {
+  color: #5d6872;
+}
+
+/* Text overlay properties from https://www.w3schools.com/howto/howto_css_image_text.asp */
+.text-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
