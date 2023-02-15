@@ -1,0 +1,60 @@
+.wd-header-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wd-pfp {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wd-tweet-content {
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+.wd-tweet-text {
+  max-width: 506px;
+  margin-top: 7px;
+}
+
+.wd-tweet-link {
+  width: 504px;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 17px;
+  margin-top: 12px;
+}
+
+.wd-tweet-image {
+  width: 504px;
+  height: 264px;
+  object-fit: cover;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-link-text {
+  padding: 12px;
+}
+
+.wd-tweet-icons {
+  width: 430px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.wd-margin-right {
+  margin-right: 12px;
+}
+
+.wd-header-icon {
+  color: rgb(29, 161, 242);
+  font-size: 29px;
+  position: relative;
+  top: -8px;
+}
