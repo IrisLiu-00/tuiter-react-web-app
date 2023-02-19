@@ -1,67 +1,68 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavigationSidebar = ({ active = 'explore' }) => {
   return (
     <div className="list-group">
-      <a className="list-group-item" href="#">
+      <Link className="list-group-item" to="#">
         Tuiter
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'home' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Home
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Explore
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'notifications' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Notifications
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'messages' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Messages
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'bookmarks' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Bookmarks
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'lists' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Lists
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'profile' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         Profile
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
                     ${active === 'more' ? 'active' : ''}`}
-        href="#"
+        to="#"
       >
         More
-      </a>
+      </Link>
     </div>
   );
 };

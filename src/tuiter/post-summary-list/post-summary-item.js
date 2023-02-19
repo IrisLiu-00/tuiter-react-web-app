@@ -11,15 +11,15 @@ const PostSummaryItem = ({
   },
 }) => {
   return (
-    <div class="list-group-item d-flex justify-content-between p-3">
-      <div class="me-3">
-        <div class="text-muted fw-normal">
+    <div className="list-group-item d-flex justify-content-between p-3">
+      <div className="me-3">
+        <div className="text-muted fw-normal">
           {post.userName} - {post.time}
         </div>
-        <div class="fw-bold">{post.topic}</div>
+        <div className="fw-bold">{post.topic}</div>
         <div> {post.title}</div>
       </div>
-      <img class="topic-image" src={post.image}></img>
+      <img className="topic-image" src={post.image}></img>
     </div>
   );
 };
