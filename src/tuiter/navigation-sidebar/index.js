@@ -10,15 +10,17 @@ const NavigationSidebar = ({ active = 'explore' }) => {
       <Link
         className={`list-group-item
                     ${active === 'home' ? 'active' : ''}`}
-        to="#"
+        to="/tuiter"
       >
+        <i class="bi bi-house-door-fill me-2"></i>
         Home
       </Link>
       <Link
         className={`list-group-item
                     ${active === 'explore' ? 'active' : ''}`}
-        to="#"
+        to="/tuiter/explore"
       >
+        <i class="bi bi-hash me-2"></i>
         Explore
       </Link>
       <Link
@@ -26,6 +28,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'notifications' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-bell me-2"></i>
         Notifications
       </Link>
       <Link
@@ -33,6 +36,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'messages' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-envelope me-2"></i>
         Messages
       </Link>
       <Link
@@ -40,6 +44,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'bookmarks' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-bookmark me-2"></i>
         Bookmarks
       </Link>
       <Link
@@ -47,6 +52,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'lists' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-card-list me-2"></i>
         Lists
       </Link>
       <Link
@@ -54,6 +60,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'profile' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-person me-2"></i>
         Profile
       </Link>
       <Link
@@ -61,6 +68,7 @@ const NavigationSidebar = ({ active = 'explore' }) => {
                     ${active === 'more' ? 'active' : ''}`}
         to="#"
       >
+        <i class="bi bi-three-dots me-2"></i>
         More
       </Link>
     </div>
