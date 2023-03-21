@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createTuit } from '../reducers/tuits-reducer';
+import { createTuitThunk } from '../../services/tuits-thunks';
 import { useDispatch } from 'react-redux';
 
 const WhatsHappening = () => {
@@ -8,8 +8,12 @@ const WhatsHappening = () => {
   const tuitClickHandler = () => {
     const newTuit = {
       tuit: whatsHappening,
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png',
+      username: 'NASA',
+      handle: '@nasa',
+      time: '2h',
     };
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening('');
   };
   return (

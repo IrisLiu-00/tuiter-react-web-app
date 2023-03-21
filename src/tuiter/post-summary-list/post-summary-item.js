@@ -14,7 +14,7 @@ const PostSummaryItem = ({
     <div className="list-group-item d-flex justify-content-between p-3">
       <div className="me-3">
         <div className="text-muted fw-normal">
-          {post.userName} - {post.time}
+          {post.username} - {post.time}
         </div>
         <div className="fw-bold">{post.topic}</div>
         <div> {post.title}</div>
